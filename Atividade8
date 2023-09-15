@@ -1,0 +1,22 @@
+//Receba o peso de uma pessoa, calcule e apresente o novo peso:
+//Se a pessoa engordar 15%.
+//Se a pessoa emagrecer 20%.
+
+#include <stdio.h>
+
+int main() {
+    
+    float pesoOriginal, pesoComQuinzeDeAdicao, pesoComVinteDeReducao;
+
+    printf("Insira o seu peso atual: ");
+    scanf("%f", &pesoOriginal);
+
+    pesoComQuinzeDeAdicao = pesoOriginal * 1.15;
+    pesoComVinteDeReducao = pesoOriginal * 0.8;
+
+    printf("Seu peso se engordar 15%% é de: %2.f kg.", pesoComQuinzeDeAdicao);
+    printf("Seu peso se emagrecer 20%% é de: %2.f kg.", pesoComVinteDeReducao);
+    
+    
+    return 0;
+}

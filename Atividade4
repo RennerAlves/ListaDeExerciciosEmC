@@ -1,0 +1,17 @@
+// Faça um programa que receba o salário de um funcionário, calcule e mostre o novo
+// salário, sabendo-se que ele teve um aumento de 25%.
+
+#include <stdio.h>
+
+int main() {
+    float salarioSemModificacao, salarioFinal;
+
+    printf("Digite o seu salário atual: ");
+    scanf("%f", &salarioSemModificacao);
+
+    salarioFinal = salarioSemModificacao * 1.25; 
+
+    printf("O seu salário, com correção positiva de 25%%, é de: R$ %.2f\n", salarioFinal);
+
+    return 0;
+}

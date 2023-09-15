@@ -1,0 +1,20 @@
+//Receba o valor do salário mínimo e o valor do salário de um funcionário. O algoritmo
+//deve calcular e apresentar a quantidade de salários mínimos que esse funcionário recebe.
+
+#include <stdio.h>
+
+int main() {
+    float valorDoSalarioMinimo, valorDoSalarioDoFuncionario, quantidadeDeSalariosMinimos;
+o
+    printf("Insira o valor do salário mínimo na data de hoje: R$ ");
+    scanf("%f", &valorDoSalarioMinimo);
+
+    printf("Insira o salário atual do funcionário: R$ ");
+    scanf("%f", &valorDoSalarioDoFuncionario);
+
+    quantidadeDeSalariosMinimos = valorDoSalarioDoFuncionario / valorDoSalarioMinimo;
+
+    printf("Este funcionário recebe %.2f salários mínimos na cotação atual.\n", quantidadeDeSalariosMinimos);
+
+    return 0;
+}

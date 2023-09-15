@@ -1,0 +1,17 @@
+// Receba uma temperatura em Celsius, calcule e mostre essa temperatura em Fahrenheit.
+//OBS: F = (C * 1,8) + 32.
+
+#include <stdio.h>
+
+int main() {
+    float tempEmCelsius, tempEmFahrenheit;
+
+    printf("Insira a temperatura em ºC (Graus Celsius): ");
+    scanf("%f", &tempEmCelsius);
+
+    tempEmFahrenheit= (tempEmCelsius * 1.8) + 32;
+
+    printf("Realizada a operação, temos que a temperatura em Fahrenheit é de: %.2f\n", tempEmFahrenheit);
+
+    return 0;
+}

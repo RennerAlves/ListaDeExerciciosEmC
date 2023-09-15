@@ -1,0 +1,21 @@
+//Receba os valores dos dois catetos de um triângulo, calcule e apresente o valor da
+//hipotenusa. OBS - Teorema de Pitágoras: a^2 = b^2 + c^2
+
+#include <stdio.h>
+#include <math.h> 
+
+int main() {
+    float primeiroCateto, segundoCateto, hipotenusa;
+
+    printf("Insira o valor do primeiro cateto: ");
+    scanf("%f", &primeiroCateto);
+
+    printf("Insira o valor do segundo cateto: ");
+    scanf("%f", &segundoCateto);
+
+    hipotenusa = sqrt(primeiroCateto * primeiroCateto + segundoCateto * segundoCateto);
+
+    printf("Com base nos valores dos catetos, a hipotenusa vale: %.2f\n", hipotenusa);
+
+    return 0;
+}
